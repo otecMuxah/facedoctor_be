@@ -24,9 +24,11 @@ STATIC_URL = '/static/'
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'cz$070jieqi6t1gixqfkak4f*cf9mask2ojn*3lcfm9vo7_j@g'
+DEBUG = True
 
 ALLOWED_HOSTS = [
-    'facedoctor.herokuapp.com'
+    'facedoctor.herokuapp.com',
+    '127.0.0.1'
 ]
 
 
