@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
+import mimetypes
 import os
 from pathlib import Path
 
@@ -131,3 +132,4 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200"
 ]
 
+mimetypes.add_type("text/css", ".css", True)
