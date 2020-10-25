@@ -16,8 +16,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 
@@ -132,4 +131,5 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200"
 ]
 
+mimetypes.add_type("text/css", ".css", True)
 mimetypes.add_type("text/css", ".css", True)
